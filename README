@@ -1,0 +1,13 @@
+This repository holds the source for gotype prior to it being removed
+from the repository https://github.com/golang/tools .
+
+The removal occurred in https://github.com/golang/tools/commit/f5a6ee1,
+after code review at https://go-review.googlesource.com/#/c/37657/ .
+That broke CI for tools like coala that need to install established
+linters so that they can be regression tested against old versions of Go.
+
+This repository can be used with "go get".
+
+There is no plan to provide regular maintainance of this copy of gotype.
+It should only be used with Go versions that were already released prior
+to the gotype command being removed from the golang tools repository.
